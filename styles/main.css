@@ -759,7 +759,15 @@ a {
   margin: 4px 8px;
 }
 
+      .sidebar .top-container .site-nav {
+        color: #82c91e;
+      }
+    
       .post-item .right .feature-container {
         border-radius: 4px;
+      }
+    
+      body {
+        background: #5c940d;
       }
     
