@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Xu17719317386.github.io</id>
     <title>Gridea</title>
-    <updated>2020-06-30T04:18:16.326Z</updated>
+    <updated>2020-06-30T13:50:15.917Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Xu17719317386.github.io"/>
     <link rel="self" href="https://Xu17719317386.github.io/atom.xml"/>
@@ -11,18 +11,121 @@
     <icon>https://Xu17719317386.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[## 这是标题]]></title>
+        <title type="html"><![CDATA[Git]]></title>
         <id>https://Xu17719317386.github.io/post/zhe-shi-biao-ti/</id>
         <link href="https://Xu17719317386.github.io/post/zhe-shi-biao-ti/">
         </link>
         <updated>2020-06-30T04:13:56.000Z</updated>
-        <summary type="html"><![CDATA[<h2 id="哈哈">哈哈</h2>
-<p>** 我是**😊<img src="https://Xu17719317386.github.io/post-images/1593490488065.JPG" alt="" loading="lazy"></p>
-]]></summary>
-        <content type="html"><![CDATA[<h2 id="哈哈">哈哈</h2>
-<p>** 我是**😊<img src="https://Xu17719317386.github.io/post-images/1593490488065.JPG" alt="" loading="lazy"></p>
-<!-- more -->
-<p>法师打发</p>
+        <content type="html"><![CDATA[<pre><code>1.svn与git的区别
+	SVN：一台服务器，多台主机，一个局域网内很好用
+	Git:分布式版本控制系统，没有服务器
+	
+2.创建本地仓库
+	git GUI Here:git init
+	小乌龟：直接创建本地仓库
+
+3.本地仓库  add   暂存区   commit提交    本地仓库
+    本地仓库  push推送   远程仓库remote
+    远程仓库remote  clone克隆   本地仓库
+    
+4.含.git文件夹为工作目录，要提交的文件都放在这一同级目录
+	java项目：
+		.idea  配置文件，不用提交
+		lib：jar包，提交
+		out：动态生成的java字节码文件.class文件，不用提交
+		serc:src下的java代码就在这里，必须提交
+		
+		不用提交的文件选择递归忽略即可
+	
+5.小乌龟使用
+	版本库浏览器：本地仓库
+	显示日志：选中2个比较版本差异
+	删除文件：
+		直接本地删除，版本库浏览器中还在，得提交后才有效
+		删除并保留本地副本：只删除版本库浏览器
+6.github :从本地推送远程仓库 
+	Xu17719317386  xgj028800
+	创建仓库不勾：readme文件   gitee.com码云
+	将本地仓库推送到远程仓库github上
+    ssh方式：
+    	命令行：
+            本地文件Git GUI Here:ssh-keygen -t rsa 生成密钥对
+            C:\\用户\\.ssh下生成密钥对：私钥自己保留，公钥给github
+            github中：头像，setting,ssh and gpg keys,加入公钥ssh-key1, 复制公钥，无需账号密码
+            命令号：
+            建立连接：git remote add oaigin git @路径
+            推送：git push -u origin master(推送分支)
+		小乌龟：
+			同步
+			origin,ssh@路径，私钥，ssh.ext(git\usr\bin\ssh.ext)
+	HTTPS方式：
+		无需秘钥和ssh.ext，添加远端origin,添加url路径
+		Xu17719317386   xgj028800
+		
+7.克隆clone
+	无需身份验证，都是开源代码
+	在文件夹中：命令行：git clone git@路径
+	小乌龟：直接克隆
+	
+8.解决冲突
+	不是在最新的文件上提交，2次修改同一个文件距离太近，就得手动解决
+	
+9.分支
+	切换/检出，提交推送
+	版本库分支图，合并，解决冲突
+	HEAD：指针指向谁，先切换moster,再合并
+10.IDEA
+	关联配置：File,setting,version control,Git/cmd/git.exe(test)
+	创建本地仓库，位置选在git-test-project上一级，这样git-test-project就和.git文件在同级目录
+	推送：VCS,Git,Push推送(用HTTPS方式)：SSH方式在idea中不好用
+	克隆：首页Check out from version contorl,Git,(HHTPS方式路径)
+		ideagit分支：VCS，Git,Branches(分支)，new 新建分支dev,查看分支checkout
+		master--&gt;checkout切换
+		
+11.Idea中Git工具条
+	Update Project:拉取代码更新工程
+	Commit:提交代码
+	Compare：比较版本差异
+	Show History:查看历史
+	Revent:使用本地版本库覆盖当前文件 
+	自己把文件加到暂存区
+	commit:提交项目中src下的java代码，git-test-project.iml文件
+		show history:选中，比较差异
+		
+12.单词
+    search or jump to:搜索或者跳转到
+    issues:事务卡片，发现代码bug
+    marketplace:市场
+    explore:探索
+    pull requests:发起请求
+    
+    overview:概述
+    repositories:收藏室
+    projects:项目
+    packages:包裹
+    
+    profile：外形
+    stars:收藏，星光
+    gists:要点
+    upgrade:升级
+    feature preview:预览功能
+    sign up / sign in / sing sou：注册/登录/退出
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://Xu17719317386.github.io/post/about/</id>
+        <link href="https://Xu17719317386.github.io/post/about/">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站">🏠 关于本站</h2>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<h2 id="联系我呀">📬 联系我呀</h2>
 ]]></content>
     </entry>
     <entry>
@@ -31,15 +134,12 @@
         <link href="https://Xu17719317386.github.io/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
 <p><a href="https://github.com/getgridea/gridea">Github</a><br>
 <a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
+<a href="http://fehey.com/">示例网站</a><br>
+<a href="http://www.baidu.com">百度</a></p>
 <h2 id="特性">特性👇</h2>
 <p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
 <p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
